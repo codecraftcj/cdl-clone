@@ -8,10 +8,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Index />}/>
+        <Route path="/cdl-clone/" element={<Index />}/>
 
-        <Route path="/exam" element={<ExamPage />} />
-        <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/cdl-clone/exam" element={<ExamPage />} />
+        <Route path="/cdl-clone/thank-you" element={<ThankYou />} />
       </Routes>
     </BrowserRouter>
   );

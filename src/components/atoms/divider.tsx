@@ -1,5 +1,5 @@
 // Divider.js
-import React from 'react';
+
 
 const Divider = () => {
   return (

@@ -23,14 +23,11 @@ function ExamPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    let timer: NodeJS.Timeout;
-    if (timeLeft > 0) {
-      timer = setTimeout(() => {
+    const timer = setTimeout(() => {
+      if (timeLeft > 0) {
         setTimeLeft(timeLeft - 1);
-      }, 1000);
-    } else {
-      handleSubmit(); // Auto-submit when time runs out
-    }
+      }
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [timeLeft]);
@@ -56,7 +53,7 @@ function ExamPage() {
 
   const handleSubmit = () => {
     console.log('Submitting answers:', answers);
-    navigate('/thank-you'); // Ensure you have a route set up for this path
+    navigate('/cdl-clone/thank-you'); // Ensure you have a route set up for this path
   };
 
   return (
