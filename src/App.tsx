@@ -12,10 +12,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* <Route path="/cdl-clone/" element={<Index />}/> */}
-        <Route path="/cdl-clone/" element={<Login />}/>
-        <Route path="/cdl-clone/register" element={<Registration />}/>
-        <Route path="/cdl-clone/exam" element={<ExamPage />} />
-        <Route path="/cdl-clone/thank-you" element={<ThankYou />} />
+        <Route path="/" element={<Login />}/>
+        <Route path="/register" element={<Registration />}/>
+        <Route path="/exam" element={<ExamPage />} />
+        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
     </BrowserRouter>
   );

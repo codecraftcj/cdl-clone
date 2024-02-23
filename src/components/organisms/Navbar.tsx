@@ -43,8 +43,8 @@ const Navbar = ({ userType }: { userType: string }) => {
       userDisplayName = 'PWA-dev';
       userMenuItems = [
         { label: 'Home', link: '#' },
-        { label: 'Login', link: '/cdl-clone/' },
-        { label: 'Register', link: '/cdl-clone/register' },
+        { label: 'Login', link: '/' },
+        { label: 'Register', link: '/register' },
       ];
       break;
     default:
