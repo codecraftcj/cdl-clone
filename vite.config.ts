@@ -8,9 +8,9 @@ export default defineConfig({
   build: {
     // Customize the build output
     outDir: 'dist',
-    assetsDir: '.', // keep the original directory structure
+    assetsDir: 'assets', // specify the directory for assets
     emptyOutDir: false, // do not delete the output directory before rebuilding
-
+  
     // Copy specific files to the output directory
     rollupOptions: {
       output: {
